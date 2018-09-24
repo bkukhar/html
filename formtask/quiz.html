@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav id="nav">
+        <hr>
+        <a href="../index.html"><b><i>Home Page</i></b></a>
+    </nav>
+    <!--Form-->
+    <main>
+        <hr>
+        <h1>Quiz</h1>
+        <section id="form">
+            <form action="https://formspree.io/dan.kukhar@gmail.com" method="POST">
+                <fieldset id="personal_data">
+                    <legend>
+                        <h2>Personal info:</h2>
+                    </legend>
+                    <label>First name:
+                    <input type="text" name="firstname" placeholder="Name"/>
+                    </label>
+                    <br><br>
+                    <label>Last name:
+                    <input type="text" name="lastname" placeholder="Surname">
+                    </label>
+                    <br>
+                    <p>Gender:
+                        <label>
+                            <input type="radio" name="gender" value="male" checked>
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="other">
+                            Other
+                        </label>
+                    </p>
+                    <p>Date of birth:
+                        <!--<input type="date" name="bday"/> - works in Chrome, but not working in Safari-->
+                        <select name="day">
+                        <option value="day">Day</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                        <select name="month">
+                        <option value="month">Month</option>
+                        <option value="january">1</option>
+                        <option value="february">2</option>
+                        <option value="march">3</option>
+                        <option value="april">4</option>
+                        <option value="may">5</option>
+                        <option value="june">6</option>
+                        <option value="july">7</option>
+                        <option value="august">8</option>
+                        <option value="september">9</option>
+                        <option value="october">10</option>
+                        <option value="november">11</option>
+                        <option value="december">12</option>
+                    </select>
+                        <select name="year">
+                        <option value="year">Year</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                    </select>
+                    </p>
+                    <label>Phone number:
+                    <input type="tel" name="usrtel" placeholder="+0123456789">
+                    </label>
+                    <br><br>
+                    <label>Your Email:
+                    <input type="email" name="email" placeholder="Email">
+                    </label>
+                    <br><br>
+                    <label>Password:
+                    <input type="password" name="password" placeholder="Password">
+                    </label>
+                    <br><br>
+                </fieldset>
+                <fieldset id="questions">
+                    <legend>
+                        <h2>Questions:</h2>
+                    </legend>
+                    <ol>
+                        <li>Number of cars owned:
+                            <input type="number" name="cars" min="0" max="100">
+                        </li>
+                        <hr>
+                        <li>Preferable region:
+                            <select name="region">
+                            <option value="Europe">Europe</option>
+                            <option value="USA">USA</option>
+                            <option value="Asia">Asia</option>
+                        </select>
+                        </li>
+                        <hr>
+                        <li>Classification:<br>
+                            <label>
+                            <input type="radio" name="classification" value="premium" checked>Premium<br>
+                            </label>
+                            <label>
+                            <input type="radio" name="classification" value="sport">Sport<br>
+                            </label>
+                            <label>
+                            <input type="radio" name="classification" value="economy">Economy<br>
+                            </label>
+                            <label>
+                            <input type="radio" name="classification" value="trucks">Trucks<br>
+                            </label>
+                        </li>
+                        <hr>
+                        <li>Marque:<br>
+                            <select name="marque" multiple size="16">
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Bentley" selected>Bentley</option>
+                                <option value="Bugatti">Bugatti</option>
+                                <option value="Lamborghini">Lamborghini</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Seat">Seat</option>
+                                <option value="Skoda">Skoda</option>
+                                <option value="Scania">Scania</option>
+                                <option value="Lexus">Lexus</option>
+                                <option value="Porsche" selected>Porsche</option>
+                                <option value="Man">Man</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Maybach">Maybach</option>
+                                <option value="Smart">Smart</option>
+                            </select>
+                        </li>
+                        <hr>
+                    </ol>
+                    <label><input type="checkbox" name="notifications" checked> Receive notifications</label>
+                </fieldset>
+                <br><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <br>
+        <a href="#nav"><b>Back to the top</b></a>
+    </main>
+    <!--Footer-->
+    <footer>
+        <hr>
+        <p>2018 All rights reserved</p>
+        <hr>
+    </footer>
+</body>
+
+</html>
